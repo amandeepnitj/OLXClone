@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLX</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
+
 <body>
-    <header class="header_1">
-        <nav>
-            <a href="#" class="logo"><strong>OLX</strong></a>
 
-            <input type="text" name="India" id="" placeholder="India" class="search">
+    <nav class='navclass' id='nav1'>
+        <a href="#" class="logo"><strong>OLX</strong></a>
 
-            <input type="text" name="mainsearch" id="" placeholder="Find Cars, Mobile Phones and more..." class="searchmain">
-            <a href="#" class="searchicon">Search</a>
-            <a href="#" class="login">Login</a>
-            <a href="#" class="sell">+ SELL</a>
+        <input type="text" name="India" id="" placeholder="India" class="search mobile">
+        <input type="text" name="mainsearch" id="" placeholder="Find Cars, Mobile Phones and more..." class="searchmain mobile">
+        <a href="#" class="searchicon mobile">Search</a>
+        <a href="#" class="login mobile">Login</a>
+        <a href="#" class="sell mobile">+ SELL</a>
+        <a href="javascript:void(0);" class="icon" onclick="header_mobile()">
+            <i class="fa fa-bars fa-2x "></i> </a>
         </nav>
-    </header>
-    <header class="header_2">
-        <nav>
-            <a href="#"><strong>ALL CATEGORIES ></strong></a>
-            <a href="#">Cars</a>
-            <a href="#">Motorcycles</a>
-            <a href="#">Mobile Phones</a>
-            <a href="#">For Sale: Houses & Apartments</a>
-            <a href="#">Scooters</a>
-            <a href="#">Commercial & Other Vehicles</a>
-            <a href="#">For Rent: Houses & Apartments</a>
+
+    
+        <nav class="navclass2" id='nav2'>
+            <a href="#"><strong>ALL CATEGORIES</strong></a>
+            <a href="#" class="mobile2">Cars</a>
+            <a href="#" class="mobile2">Motorcycles</a>
+            <a href="#" class="mobile2" >Mobile Phones</a>
+            <a href="#" class="mobile2">For Sale: Houses & Apartments</a>
+            <a href="#" class="mobile2">Scooters</a>
+            <a href="#" class="mobile2">Commercial & Other Vehicles</a>
+            <a href="#" class="mobile2">For Rent: Houses & Apartments</a>
+            <a href="javascript:void(0);" class="icon2" onclick="header_mobile2()">
+                <i class="fa fa-bars "></i> </a>
         </nav>
-    </header>
     <div class="olx"></div>
     <main>
         <h1>Fresh recommendations</h1>
@@ -145,7 +151,7 @@
             <ul>
                 <li><a href="#">Help</a></li>
                 <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Legal &  Privacy information</a></li>
+                <li><a href="#">Legal & Privacy information</a></li>
             </ul>
         </section>
         <section>
@@ -159,6 +165,9 @@
 
     </div>
     <footer><span><strong>Other Countries</strong> Pakistan-South Africa-Indonesia</span>
-    <span><strong>Free Classifieds In India</strong> .@c 2006-2021 OLX</span></footer>
+        <span><strong>Free Classifieds In India</strong> .@c 2006-2021 OLX</span>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

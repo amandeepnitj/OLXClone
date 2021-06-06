@@ -2,18 +2,30 @@
     padding: 0;
     margin: 0;
 }
-.header_1{
+.navclass{
     background-color: rgb(247, 241, 239);
-    /* border: 1px solid rgb(95, 29, 29); */
-    height: 50px;
-}
-.header_1 nav{
+    border: 1px solid rgb(95, 29, 29);
+    /* height: 40px; */
+    padding: 10px;
+    overflow: hidden;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
-.header_1 nav *{
-    margin: 4px 10px;
-}
+.navclass *{
+    /* padding: 0px 12px; */
+    /* float: left;
+    display: block; */
+    text-align: center;
+    /* padding: 8px 16px; */
+    margin: 0px 10px;
+} 
+.navclass input{
+    padding: 0px 12px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 8px 16px;
+} 
 .search{
     border: 2px solid black;
     border-radius: 3px;
@@ -26,7 +38,7 @@
     border: 2px solid black;
     border-radius: 3px;
     width: 500px;
-    margin: 4px 0px 4px 10px !important; 
+    /* margin: 4px 0px 4px 10px !important;  */
 }
 .searchmain:hover{
     border: 2px solid rgb(25, 218, 224);
@@ -37,7 +49,7 @@
     font-size: 2rem;
 }
 .searchicon{
-    margin: 4px 10px 4px 0px !important;
+    /* margin: 4px 10px 4px 0px !important; */
     text-decoration: none;
     font-size: 1.5rem;
     color: white;
@@ -53,7 +65,7 @@
     font-weight: bolder;
     font-size: 1.45rem;
     color: rgb(2, 42, 42);
-    padding: 2px;
+    /* padding: 2px; */
 }
 .login:hover{
     text-decoration:none;
@@ -63,39 +75,131 @@
     font-weight: bolder;
     font-size: 1.45rem;
     color:  rgb(2, 42, 42);
-    padding: 2px;
+    /* padding: 2px; */
     border: 3px solid rgb(12, 148, 118);
     border-radius: 10px;
 }
-.header_2{
-    background-color: rgb(247, 241, 239);
-    /* border: 1px solid rgb(95, 29, 29); */
-    height: 50px;
+
+/* start work for mobile of header_1 */
+.navclass .icon{
+    display: none;
+    color: black;
 }
-.header_2 *{
-    margin: 4px 10px;
+@media screen and (max-width:1328px){
+    .navclass a:not(:first-child){display: none;}
+    .navclass input{display: none;}
+    /* nav input{display: none;} */
+    .navclass a.icon{
+        float: right;
+        display:block;
+    }
+    .navclass{
+        display:block;
+    }
+    .navclass .mobile{
+        margin: 4px 0px 4px 12px !important;
+        text-align:center;
+        border: none;
+        font-size: 15px;
+        background: white;
+        color: rgb(2, 42, 42);
+    }
+
+    
+    .olx{
+        display: none;
+    }
 }
-.header_2 nav{
+
+
+
+@media screen and (max-width: 1328px) {
+    .navclass.responsive {position: relative;}
+    .navclass.responsive a.icon {
+        margin-top: 10px;
+        margin-right: 18.5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navclass.responsive a {
+      float: none ;
+      display: block ;
+      text-align: left;
+    }
+    .navclass.responsive input {
+        float: none ;
+        display: block ;
+        text-align: left;
+      }
+  }
+
+
+.navclass2{
     display: flex;
     justify-content:center;
     /* align-content:flex-end; */
     font-size: 1.1rem;
+    padding: 10px;
     
 }
-.header_2 nav a{
+.navclass2 a{
     text-decoration: none;
     color:rgb(6, 41, 32);
+    margin: 5px;
 }
-.header_2 nav a:hover{
+.navclass2 a:hover{
     color:rgb(12, 148, 118);
 }
+.icon2{
+    display: none;
+    color: black;
+}
+/*nav2 mobile version*/
+@media screen and (max-width:1328px){
+    .navclass2 .mobile2{display: none;}
+    .navclass2 a.icon2{
+        float: right;
+        display:block;
+    }
+    .navclass2{
+        display:block;
+    }
+    .navclass2 .mobile2{
+        margin: 4px 0px 4px 12px !important;
+        text-align:center;
+        border: none;
+        font-size: 15px;
+        background: white;
+        color: rgb(2, 42, 42);
+    }
+}
+
+
+
+@media screen and (max-width: 1328px) {
+    .navclass2.responsive2 {position: relative;}
+    .navclass2.responsive2 a.icon2 {
+        margin-top: 15px;
+        margin-right: 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navclass2.responsive2 a {
+      float: none ;
+      display: block ;
+      text-align: left;
+    }
+}
+
+
+
+
 .olx{
     background-image: url("../img/olx.jpg");
     background-repeat: no-repeat;
     background-size: auto;
-    /* position: relative;
-    left:-120px; */
-    /* border: 2px solid black; */
     height: 250px;
 }
 main{
@@ -171,6 +275,19 @@ ul li a{
 ul li a:hover{
     color: rgba(0,47,52,1);
 }
+
+@media screen and (max-width:550px){
+    
+    .footer1{
+        display:block;
+    }
+    .footer1 section ul{
+        margin-top: 0px;
+    }
+}
+
+
+
 footer{
     display: flex;
     justify-content: space-around;
