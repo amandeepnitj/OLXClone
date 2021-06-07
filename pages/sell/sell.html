@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class='navclass-sell'>
+        <a href="#" class="logo"><strong>OLX</strong></a>
+        <a href="../../index.html" class='logo go-back'>Go Back</a>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>POST YOUR AD</h1>
+            <select name="category" id="categoryid" onchange="if (this.selectedIndex+1) manufacturerfun();">
+                <option value="null">Choose category</option>
+                <option value="bikes">Bikes</option>
+                <option value="scooters">Scooters</option>
+            </select>
+            <select name="manufacturers" id="manufacturerid" onchange="if (this.selectedIndex+1) modelfun();">
+            </select>
+            <select name="models" id="modelid">
+            </select>
+            <input type="number" min="1900" id="yearid">
+            <input type="number" min="0" id="kmdrivenid">
+            <input type="text" id="titleid" placeholder="AD Title">
+            <textarea name="description" id="descriptionid" cols="50" rows="5" placeholder="Description"></textarea>
+            <input type="number" min="1" id="priceid" placeholder="Price in Rs">
+            <button class="submit">Submit</button>
+        </div>    
+    </main>
+    <footer><span><strong>Other Countries</strong> Pakistan-South Africa-Indonesia</span>
+        <span><strong>Free Classifieds In India</strong> .@c 2006-2021 OLX</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

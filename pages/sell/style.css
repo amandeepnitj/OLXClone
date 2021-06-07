@@ -1,0 +1,68 @@
+/* sell css */
+*{
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    text-decoration: none;
+    color: #002f34;
+    font-size: 2rem;
+}
+.navclass-sell{
+    background: rgb(233, 229, 223);
+    display: flex;
+    justify-content: space-between;
+}
+.navclass-sell .go-back{
+    font-size: 1.4rem !important;
+    margin: 5px;
+    border: 2px solid #002f34;;
+    border-radius: 8px;
+
+}
+.navclass-sell .go-back:hover{
+    color: white;
+    background-color: #002f34;;
+}
+main{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    /* min-width: 500px; */
+     border: 1px solid green;
+}
+.container
+{
+    display: flex;
+    width: 50vw;
+    min-width: 400px;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(197, 231, 197);
+    background-color: honeydew;
+    margin: 10px;
+}
+.container h1{
+    margin-bottom: 30px;
+    text-align: center;
+}   
+.container *{
+    margin: 5px 0px;
+    width: 50%;
+    height: 30px;
+    min-width: 300px;
+}
+.container select{
+    width: 50%;
+    height: 30px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    height: 45px;
+    align-items : center;
+    background-color: #002f34;
+    color: rgb(243, 243, 243);
+}

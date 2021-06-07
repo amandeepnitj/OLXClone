@@ -104,11 +104,6 @@
         background: white;
         color: rgb(2, 42, 42);
     }
-
-    
-    .olx{
-        display: none;
-    }
 }
 
 
@@ -194,64 +189,91 @@
 }
 
 
-
-
-.olx{
-    background-image: url("../img/olx.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    height: 250px;
-}
+/*  main context css */
 main{
+    display: flex;   
+    min-height: 400px;
+}
+.container1{
+    width:70vw;
+    border:1px solid rgb(10, 66, 66);
+}
+.container2{
+    width: 30vw;
+    border:1px solid red;
+}
+.images{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    
+}
+.images img{
+    opacity:.9;
     /* border: 1px solid red; */
-    /* height: 90vh; */
+}
+.details{
+    display:flex;
+    flex-direction: column;
+
+}
+.details div{
+    width: 45%; 
+    font-size:20px;
+    border: 1px solid grey;
+    margin: 2px 0px;
+    min-width: 350px;
+}
+.details div span{
+    width: 50%;
+    /* border: 1px solid red; */
+    margin-right: 50%;
+}
+.descriptions p{
+    margin: 2px 0px;
+    font-size: 18px;
+}
+.container2{
+    color: #002f34;
     display: flex;
     flex-direction: column;
-    margin: 0px 5vw;
+    max-height: 400px;
+    border: 1px solid #002f34;
+    margin: 2px;
 }
-.flexitems{
-    display: flex;
-    justify-content:space-around;
-    margin: 20px;
-    /* border: 1px solid green; */
-    height: 100%;
-    flex-wrap: wrap;
+.container2 *{
+    margin: 5px ;
+    border: 1px solid red;
 }
-.item{
-    width: 300px;   
-    border: 2px solid rgb(195, 185, 185);
-    margin-bottom: 20px;
-    border-radius: 3px;
-    /* cursor: pointer; */
-    text-decoration: none;
-    
+#price{
+    font-size: 25px;
+    font-weight: bolder;
 }
-.item:hover{
-    border: 2px solid rgb(165, 155, 155);
-}
-.item img{
-    width: 300px;
-}
-.price{
-    font-size: 24px;
-    padding: 2px 8px;
-    color: rgb(5, 46, 37);
-    
-}
-.brand{
-    color: rgb(80, 98, 90);
-    padding: 2px 8px;
-}
-.location{
+#location{
     display: flex;
     justify-content: space-between;
-    color: rgb(80, 98, 90);
-    padding: 2px 8px;
 }
-.year{
-    padding: 2px 8px;
-    color: rgb(5, 46, 37);
+@media screen and (max-width:1124px) {
+    .container2{
+        display: none;
+    }    
+    .container1{
+        width: 100vw;
+    }
 }
+@media screen and (max-width:800px) {
+    .images img{
+        width:500px;
+    }
+}
+@media screen and (max-width:550px) {
+    .images img{
+        width:300px;
+    }
+}
+/* footer */
+
 .footer1{
     background-color: #ebeeef;
     display: flex;
